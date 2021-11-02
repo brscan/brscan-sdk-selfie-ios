@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.homepage          = 'https://github.com/brscan/brscan-sdk-selfie-ios'
 
     s.author            = { 'Alan Soares de Oliveira' => 'alan.oliveira19@fatec.sp.gov.br'}
-    s.license           = { :type => 'MIT', :file => 'LICENSE' }
+    s.license           = 'MIT'
 
     s.platform          = :ios
     s.source            = { :git => 'https://github.com/brscan/brscan-sdk-selfie-ios.git', :tag => s.version.to_s }
