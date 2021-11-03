@@ -2,7 +2,7 @@
 //  brscan_sdk_selfie_ios.h
 //  brscan-sdk-selfie-ios
 //
-//  Created by Alan Soares on 24/08/21.
+//  Created by C93514A on 03/11/21.
 //
 
 #import <Foundation/Foundation.h>
