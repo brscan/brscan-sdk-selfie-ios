@@ -189,6 +189,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -208,22 +209,54 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+@protocol CapturaSViewControllerDelegate;
 @class NSCoder;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios22CapturaSViewController")
 @interface CapturaSViewController : UIViewController
+@property (nonatomic, strong) id <CapturaSViewControllerDelegate> _Nullable delegate;
+- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave wizard:(BOOL)wizard segurancaExtra:(BOOL)segurancaExtra verificarLuminosidade:(BOOL)verificarLuminosidade OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
 
+@interface CapturaSViewController (SWIFT_EXTENSION(brscan_sdk_selfie_ios))
+- (void)erro:(NSString * _Nonnull)erro;
+- (void)erroLiveness:(NSString * _Nonnull)erro;
+- (void)luminosidade:(NSString * _Nonnull)erro;
+- (void)cameraNenhuma:(NSString * _Nonnull)erro;
+- (void)cemeraSemPermissao:(NSString * _Nonnull)erro;
+- (void)fecharTelaDeSelfie;
+@end
+
+@class SelfieModel;
+
+SWIFT_PROTOCOL("_TtP21brscan_sdk_selfie_ios30CapturaSViewControllerDelegate_")
+@protocol CapturaSViewControllerDelegate
+- (void)erroDelegate:(NSString * _Nonnull)erro;
+- (void)erroLivenessDelegate:(NSString * _Nonnull)erro;
+- (void)sucessoDelegate:(SelfieModel * _Nonnull)selfie;
+- (void)luminosidadeDelegate:(NSString * _Nonnull)erro;
+- (void)cameraNenhumaDelegate:(NSString * _Nonnull)erro;
+- (void)cemeraSemPermissaoDelegate:(NSString * _Nonnull)erro;
+- (void)fecharTelaDeSelfieDelegate;
+@end
+
 
 SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios21OvalGraficOverlayView")
 @interface OvalGraficOverlayView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios11SelfieModel")
+@interface SelfieModel : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
