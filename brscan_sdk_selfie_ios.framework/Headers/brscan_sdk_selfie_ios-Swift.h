@@ -232,13 +232,12 @@ SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios22CapturaSViewController")
 - (void)fecharTelaDeSelfie;
 @end
 
-@class SelfieModel;
 
 SWIFT_PROTOCOL("_TtP21brscan_sdk_selfie_ios30CapturaSViewControllerDelegate_")
 @protocol CapturaSViewControllerDelegate
 - (void)erroDelegate:(NSString * _Nonnull)erro;
 - (void)erroLivenessDelegate:(NSString * _Nonnull)erro;
-- (void)sucessoDelegate:(SelfieModel * _Nonnull)selfie;
+- (void)sucessoDelegate:(NSDictionary<NSString *, NSString *> * _Nonnull)selfie;
 - (void)luminosidadeDelegate:(NSString * _Nonnull)erro;
 - (void)cameraNenhumaDelegate:(NSString * _Nonnull)erro;
 - (void)cemeraSemPermissaoDelegate:(NSString * _Nonnull)erro;
