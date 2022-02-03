@@ -223,15 +223,6 @@ SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios22CapturaSViewController")
 @end
 
 
-@interface CapturaSViewController (SWIFT_EXTENSION(brscan_sdk_selfie_ios))
-- (void)erro:(NSString * _Nonnull)erro;
-- (void)erroLiveness:(NSString * _Nonnull)erro;
-- (void)luminosidade:(NSString * _Nonnull)erro;
-- (void)cameraNenhuma:(NSString * _Nonnull)erro;
-- (void)cemeraSemPermissao:(NSString * _Nonnull)erro;
-- (void)fecharTelaDeSelfie;
-@end
-
 
 SWIFT_PROTOCOL("_TtP21brscan_sdk_selfie_ios30CapturaSViewControllerDelegate_")
 @protocol CapturaSViewControllerDelegate
