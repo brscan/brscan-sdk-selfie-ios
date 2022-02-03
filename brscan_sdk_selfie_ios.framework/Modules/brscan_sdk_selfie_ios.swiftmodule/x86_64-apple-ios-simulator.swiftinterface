@@ -1,0 +1,97 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name brscan_sdk_selfie_ios
+import AVFoundation
+import CommonCrypto
+import CoreMotion
+import Foundation
+import MLKitFaceDetection
+import MLKitVision
+import Security
+import Swift
+import UIKit
+@_exported import brscan_sdk_selfie_ios
+@objc public protocol CapturaSViewControllerDelegate {
+  @objc func erroDelegate(_ erro: Swift.String)
+  @objc func erroLivenessDelegate(_ erro: Swift.String)
+  @objc func sucessoDelegate(_ selfie: [Swift.String : Swift.String])
+  @objc func luminosidadeDelegate(_ erro: Swift.String)
+  @objc func cameraNenhumaDelegate(_ erro: Swift.String)
+  @objc func cemeraSemPermissaoDelegate(_ erro: Swift.String)
+  @objc func fecharTelaDeSelfieDelegate()
+}
+@objc @_hasMissingDesignatedInitializers public class CapturaSViewController : UIKit.UIViewController {
+  @objc public var delegate: brscan_sdk_selfie_ios.CapturaSViewControllerDelegate?
+  @objc required public init(chave: Swift.String, wizard: Swift.Bool, segurancaExtra: Swift.Bool, verificarLuminosidade: Swift.Bool)
+  @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension CapturaSViewController : brscan_sdk_selfie_ios.CapturarSelfieViewControllerDelegate {
+  public func sucesso(_ selfie: brscan_sdk_selfie_ios.Selfie)
+  public func erro(_ erro: Swift.String)
+  public func erroLiveness(_ erro: Swift.String)
+  public func luminosidade(_ erro: Swift.String)
+  public func cameraNenhuma(_ erro: Swift.String)
+  public func cemeraSemPermissao(_ erro: Swift.String)
+  public func fecharTelaDeSelfie()
+}
+@_hasMissingDesignatedInitializers @objc public class SelfieModel : ObjectiveC.NSObject {
+  public var path: Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension UIColor {
+  public var primary: UIKit.UIColor {
+    get
+  }
+  public var brscan_background_captura: UIKit.UIColor {
+    get
+  }
+  public var secondary: UIKit.UIColor {
+    get
+  }
+  public var brscan_default_captura: UIKit.UIColor {
+    get
+  }
+  public var brscan_highlight_captura: UIKit.UIColor {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OvalGraficOverlayView : UIKit.UIView {
+  public var shape: QuartzCore.CAShapeLayer
+  public var testVar5: Swift.String
+  public func addEclipsePequeno()
+  public func addEclipseGrande()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RandonGenerator {
+  public static func randomString() -> Swift.String
+  public static func randomInterger() -> Swift.Int
+  @objc deinit
+}
+public protocol CapturarSelfieViewControllerDelegate {
+  func erro(_ erro: Swift.String)
+  func erroLiveness(_ erro: Swift.String)
+  func sucesso(_ selfie: brscan_sdk_selfie_ios.Selfie)
+  func luminosidade(_ erro: Swift.String)
+  func cameraNenhuma(_ erro: Swift.String)
+  func cemeraSemPermissao(_ erro: Swift.String)
+  func fecharTelaDeSelfie()
+}
+extension UIFont {
+  public static var loadFonts: ()
+}
+extension UIView {
+  public var viewWidth: CoreGraphics.CGFloat {
+    get
+  }
+  public var viewHeight: CoreGraphics.CGFloat {
+    get
+  }
+}
+public struct Selfie : Swift.Codable {
+  public var path: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
