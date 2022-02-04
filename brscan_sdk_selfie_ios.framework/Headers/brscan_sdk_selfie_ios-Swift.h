@@ -265,6 +265,7 @@ SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios11SelfieModel")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif

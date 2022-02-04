@@ -36,6 +36,80 @@ extension CapturaSViewController : brscan_sdk_selfie_ios.CapturarSelfieViewContr
   public func cemeraSemPermissao(_ erro: Swift.String)
   public func fecharTelaDeSelfie()
 }
+extension String {
+  public var posicione_o_aparelho_na_vertical: Swift.String {
+    get
+  }
+  public var centralize_o_rosto: Swift.String {
+    get
+  }
+  public var aguarde_um_instante: Swift.String {
+    get
+  }
+  public var aguardando_o_rosto: Swift.String {
+    get
+  }
+  public var fique_sozinho: Swift.String {
+    get
+  }
+  public var alinhe_o_rosto: Swift.String {
+    get
+  }
+  public var aproxime_o_aparelho: Swift.String {
+    get
+  }
+  public var afaste_o_aparelho: Swift.String {
+    get
+  }
+  public var mantenha_os_olhos_abertos: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_selfie_captura: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_ao_conectar_no_servidor: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_selfie_remover_mascara: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_selfie_remover_oculos: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_ao_validar_chave: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_baixa_luminosidade: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_recurso_nao_encontrado: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_device_rooted: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_usuario_cancelou_acao: Swift.String {
+    get
+  }
+  public var brscan_selfie_sucesso_selfie_foto_valida: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_liberar_camera: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_url_invalida: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_servirvidor: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_processo: Swift.String {
+    get
+  }
+  public var brscan_selfie_erro_token_expired: Swift.String {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers @objc public class SelfieModel : ObjectiveC.NSObject {
   public var path: Swift.String
   @objc deinit
@@ -81,6 +155,20 @@ public protocol CapturarSelfieViewControllerDelegate {
 }
 extension UIFont {
   public static var loadFonts: ()
+}
+extension UIFont {
+  public var ligth: Swift.String {
+    get
+  }
+  public var medium: Swift.String {
+    get
+  }
+  public var regular: Swift.String {
+    get
+  }
+  public var bold: Swift.String {
+    get
+  }
 }
 extension UIView {
   public var viewWidth: CoreGraphics.CGFloat {
