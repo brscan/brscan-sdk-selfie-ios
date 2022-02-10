@@ -210,13 +210,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 @protocol CapturaSViewControllerDelegate;
+@class ConfiguracaoTexto;
 @class NSCoder;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios22CapturaSViewController")
 @interface CapturaSViewController : UIViewController
 @property (nonatomic, strong) id <CapturaSViewControllerDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave wizard:(BOOL)wizard segurancaExtra:(BOOL)segurancaExtra verificarLuminosidade:(BOOL)verificarLuminosidade OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave wizard:(BOOL)wizard mudarCamera:(BOOL)mudarCamera segurancaExtra:(BOOL)segurancaExtra verificarLuminosidade:(BOOL)verificarLuminosidade resolucao:(NSString * _Nonnull)resolucao performance:(BOOL)performance verificarOlhos:(BOOL)verificarOlhos tipoRetorno:(NSString * _Nonnull)tipoRetorno customizacaoTexto:(ConfiguracaoTexto * _Nonnull)customizacaoTexto OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
@@ -236,6 +237,13 @@ SWIFT_PROTOCOL("_TtP21brscan_sdk_selfie_ios30CapturaSViewControllerDelegate_")
 @end
 
 
+SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios17ConfiguracaoTexto")
+@interface ConfiguracaoTexto : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBrscan_selfie_erro_selfie_captura:(NSString * _Nonnull)brscan_selfie_erro_selfie_captura brscan_selfie_erro_ao_conectar_no_servidor:(NSString * _Nonnull)brscan_selfie_erro_ao_conectar_no_servidor brscan_selfie_erro_ao_validar_chave:(NSString * _Nonnull)brscan_selfie_erro_ao_validar_chave brscan_selfie_erro_baixa_luminosidade:(NSString * _Nonnull)brscan_selfie_erro_baixa_luminosidade brscan_selfie_erro_device_rooted:(NSString * _Nonnull)brscan_selfie_erro_device_rooted brscan_selfie_erro_usuario_cancelou_acao:(NSString * _Nonnull)brscan_selfie_erro_usuario_cancelou_acao brscan_selfie_erro_liberar_camera:(NSString * _Nonnull)brscan_selfie_erro_liberar_camera brscan_selfie_erro_servidor:(NSString * _Nonnull)brscan_selfie_erro_servidor brscan_selfie_erro_processo:(NSString * _Nonnull)brscan_selfie_erro_processo brscan_selfie_erro_token_expired:(NSString * _Nonnull)brscan_selfie_erro_token_expired brscan_selfie_erro_acesso_negado_title:(NSString * _Nonnull)brscan_selfie_erro_acesso_negado_title brscan_selfie_erro_acesso_negado_subtitle:(NSString * _Nonnull)brscan_selfie_erro_acesso_negado_subtitle brscan_selfie_erro_acesso_negado_botao_de_acao:(NSString * _Nonnull)brscan_selfie_erro_acesso_negado_botao_de_acao brscan_selfie_erro_captura_title:(NSString * _Nonnull)brscan_selfie_erro_captura_title brscan_selfie_erro_captura_subtitle:(NSString * _Nonnull)brscan_selfie_erro_captura_subtitle brscan_selfie_erro_captura_botao_tentar_novamente:(NSString * _Nonnull)brscan_selfie_erro_captura_botao_tentar_novamente brscan_selfie_erro_captura_botao_sair_do_processo:(NSString * _Nonnull)brscan_selfie_erro_captura_botao_sair_do_processo brscan_selfie_posicione_o_aparelho_na_vertical:(NSString * _Nonnull)brscan_selfie_posicione_o_aparelho_na_vertical brscan_selfie_centralize_o_rosto:(NSString * _Nonnull)brscan_selfie_centralize_o_rosto brscan_selfie_aguarde_um_instante:(NSString * _Nonnull)brscan_selfie_aguarde_um_instante brscan_selfie_aguardando_o_rosto:(NSString * _Nonnull)brscan_selfie_aguardando_o_rosto brscan_selfie_fique_sozinho:(NSString * _Nonnull)brscan_selfie_fique_sozinho brscan_selfie_alinhe_o_rosto:(NSString * _Nonnull)brscan_selfie_alinhe_o_rosto brscan_selfie_aproxime_o_aparelho:(NSString * _Nonnull)brscan_selfie_aproxime_o_aparelho brscan_selfie_afaste_o_aparelho:(NSString * _Nonnull)brscan_selfie_afaste_o_aparelho brscan_selfie_mantenha_os_olhos_abertos:(NSString * _Nonnull)brscan_selfie_mantenha_os_olhos_abertos brscan_selfie_camera_frontal:(NSString * _Nonnull)brscan_selfie_camera_frontal brscan_selfie_camera_traseira:(NSString * _Nonnull)brscan_selfie_camera_traseira brscan_selfie_loading:(NSString * _Nonnull)brscan_selfie_loading OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios21OvalGraficOverlayView")
 @interface OvalGraficOverlayView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -248,6 +256,7 @@ SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios11SelfieModel")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
