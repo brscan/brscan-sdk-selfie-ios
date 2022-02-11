@@ -11,7 +11,7 @@ import Security
 import Swift
 import UIKit
 @_exported import brscan_sdk_selfie_ios
-@_inheritsConvenienceInitializers @objc public class ConfiguracaoTexto : ObjectiveC.NSObject, Swift.Codable {
+@_inheritsConvenienceInitializers @objc public class ConfiguracaoTextoSelfie : ObjectiveC.NSObject, Swift.Codable {
   public var brscan_selfie_erro_selfie_captura: Swift.String
   public var brscan_selfie_erro_ao_conectar_no_servidor: Swift.String
   public var brscan_selfie_erro_ao_validar_chave: Swift.String
@@ -58,7 +58,7 @@ import UIKit
 }
 @objc @_hasMissingDesignatedInitializers public class CapturaSViewController : UIKit.UIViewController {
   @objc public var delegate: brscan_sdk_selfie_ios.CapturaSViewControllerDelegate?
-  @objc required public init(chave: Swift.String, wizard: Swift.Bool, mudarCamera: Swift.Bool = false, segurancaExtra: Swift.Bool = false, verificarLuminosidade: Swift.Bool = false, resolucao: Swift.String = "", performance: Swift.Bool = false, verificarOlhos: Swift.Bool = false, tipoRetorno: Swift.String = "base64", customizacaoTexto: brscan_sdk_selfie_ios.ConfiguracaoTexto = ConfiguracaoTexto())
+  @objc required public init(chave: Swift.String, wizard: Swift.Bool, mudarCamera: Swift.Bool = false, segurancaExtra: Swift.Bool = false, verificarLuminosidade: Swift.Bool = false, resolucao: Swift.String = "", performance: Swift.Bool = false, verificarOlhos: Swift.Bool = false, tipoRetorno: Swift.String = "base64", customizacaoTexto: brscan_sdk_selfie_ios.ConfiguracaoTextoSelfie = ConfiguracaoTextoSelfie())
   @objc override dynamic public func viewDidLoad()
   @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
