@@ -220,7 +220,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC21brscan_sdk_selfie_ios22CapturaSViewController")
 @interface CapturaSViewController : UIViewController
 @property (nonatomic, strong) id <CapturaSViewControllerDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave wizard:(BOOL)wizard mudarCamera:(BOOL)mudarCamera segurancaExtra:(BOOL)segurancaExtra verificarLuminosidade:(BOOL)verificarLuminosidade resolucao:(NSString * _Nonnull)resolucao performance:(BOOL)performance verificarOlhos:(BOOL)verificarOlhos tipoRetorno:(NSString * _Nonnull)tipoRetorno customizacaoTexto:(ConfiguracaoTextoSelfie * _Nonnull)customizacaoTexto OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChave:(NSString * _Nonnull)chave wizard:(BOOL)wizard mudarCamera:(BOOL)mudarCamera segurancaExtra:(BOOL)segurancaExtra segurancaExtraRootCheck:(BOOL)segurancaExtraRootCheck segurancaExtraSslPinning:(BOOL)segurancaExtraSslPinning verificarLuminosidade:(BOOL)verificarLuminosidade resolucao:(NSString * _Nonnull)resolucao performance:(BOOL)performance verificarOlhos:(BOOL)verificarOlhos tipoRetorno:(NSString * _Nonnull)tipoRetorno customizacaoTexto:(ConfiguracaoTextoSelfie * _Nonnull)customizacaoTexto retornarErros:(BOOL)retornarErros OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
