@@ -49,13 +49,8 @@ import _Concurrency
   required public init(from decoder: Swift.Decoder) throws
 }
 @objc public protocol CapturaSViewControllerDelegate {
-  @objc func erroDelegate(_ erro: Swift.String)
-  @objc func erroLivenessDelegate(_ erro: Swift.String)
   @objc func sucessoDelegate(_ selfie: [Swift.String : Swift.String])
-  @objc func luminosidadeDelegate(_ erro: Swift.String)
-  @objc func cameraNenhumaDelegate(_ erro: Swift.String)
-  @objc func cemeraSemPermissaoDelegate(_ erro: Swift.String)
-  @objc func fecharTelaDeSelfieDelegate()
+  @objc func erroDelegate(_ erro: [Swift.String : Any])
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CapturaSViewController : UIKit.UIViewController {
   @objc @_Concurrency.MainActor(unsafe) public var delegate: brscan_sdk_selfie_ios.CapturaSViewControllerDelegate?
@@ -65,16 +60,17 @@ import _Concurrency
 }
 extension brscan_sdk_selfie_ios.CapturaSViewController : brscan_sdk_selfie_ios.CapturarSelfieViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) public func sucesso(_ selfie: brscan_sdk_selfie_ios.Selfie)
-  @_Concurrency.MainActor(unsafe) public func erro(_ erro: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func erroLiveness(_ erro: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func luminosidade(_ erro: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func cameraNenhuma(_ erro: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func cemeraSemPermissao(_ erro: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func fecharTelaDeSelfie()
+  @_Concurrency.MainActor(unsafe) public func erro(_ erro: brscan_sdk_selfie_ios.Erro, _ id: Swift.String)
 }
 @_hasMissingDesignatedInitializers @objc public class SelfieModel : ObjectiveC.NSObject {
   public var path: Swift.String
   @objc deinit
+}
+public struct Erro : Swift.Codable {
+  public var codigo: Swift.Int
+  public var descricao: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 extension UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
@@ -96,6 +92,15 @@ extension UIKit.UIColor {
     get
   }
   public var brscan_selfie_icone_captura_botao_fechar: UIKit.UIColor {
+    get
+  }
+  public var brscan_selfie_background_loading: UIKit.UIColor {
+    get
+  }
+  public var brscan_selfie_color_check_icon: UIKit.UIColor {
+    get
+  }
+  public var brscan_selfie_background_button_primary: UIKit.UIColor {
     get
   }
 }
@@ -201,13 +206,8 @@ extension Swift.String {
   @objc deinit
 }
 public protocol CapturarSelfieViewControllerDelegate {
-  func erro(_ erro: Swift.String)
-  func erroLiveness(_ erro: Swift.String)
+  func erro(_ erro: brscan_sdk_selfie_ios.Erro, _ id: Swift.String)
   func sucesso(_ selfie: brscan_sdk_selfie_ios.Selfie)
-  func luminosidade(_ erro: Swift.String)
-  func cameraNenhuma(_ erro: Swift.String)
-  func cemeraSemPermissao(_ erro: Swift.String)
-  func fecharTelaDeSelfie()
 }
 extension UIKit.UIFont {
   public static var loadFonts: ()
