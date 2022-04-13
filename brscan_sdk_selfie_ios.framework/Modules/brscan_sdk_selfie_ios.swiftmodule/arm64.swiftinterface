@@ -79,10 +79,10 @@ extension UIKit.UIColor {
   public var primary: UIKit.UIColor {
     get
   }
-  public var brscan_background_captura: UIKit.UIColor {
+  public var secondary: UIKit.UIColor {
     get
   }
-  public var secondary: UIKit.UIColor {
+  public var brscan_background_captura: UIKit.UIColor {
     get
   }
   public var brscan_default_captura: UIKit.UIColor {
@@ -223,6 +223,102 @@ extension UIKit.UIFont {
     get
   }
   public var bold: Swift.String {
+    get
+  }
+}
+public enum Model : Swift.String {
+  case simulator
+  case iPod1
+  case iPod2
+  case iPod3
+  case iPod4
+  case iPod5
+  case iPod6
+  case iPod7
+  case iPad2
+  case iPad3
+  case iPad4
+  case iPadAir
+  case iPadAir2
+  case iPadAir3
+  case iPadAir4
+  case iPadAir5
+  case iPad5
+  case iPad6
+  case iPad7
+  case iPad8
+  case iPad9
+  case iPadMini
+  case iPadMini2
+  case iPadMini3
+  case iPadMini4
+  case iPadMini5
+  case iPadMini6
+  case iPadPro9_7
+  case iPadPro10_5
+  case iPadPro11
+  case iPadPro2_11
+  case iPadPro3_11
+  case iPadPro12_9
+  case iPadPro2_12_9
+  case iPadPro3_12_9
+  case iPadPro4_12_9
+  case iPadPro5_12_9
+  case iPhone4
+  case iPhone4S
+  case iPhone5
+  case iPhone5S
+  case iPhone5C
+  case iPhone6
+  case iPhone6Plus
+  case iPhone6S
+  case iPhone6SPlus
+  case iPhoneSE
+  case iPhone7
+  case iPhone7Plus
+  case iPhone8
+  case iPhone8Plus
+  case iPhoneX
+  case iPhoneXS
+  case iPhoneXSMax
+  case iPhoneXR
+  case iPhone11
+  case iPhone11Pro
+  case iPhone11ProMax
+  case iPhoneSE2
+  case iPhone12Mini
+  case iPhone12
+  case iPhone12Pro
+  case iPhone12ProMax
+  case iPhone13Mini
+  case iPhone13
+  case iPhone13Pro
+  case iPhone13ProMax
+  case iPhoneSE3
+  case AppleWatch1
+  case AppleWatchS1
+  case AppleWatchS2
+  case AppleWatchS3
+  case AppleWatchS4
+  case AppleWatchS5
+  case AppleWatchSE
+  case AppleWatchS6
+  case AppleWatchS7
+  case AppleTV1
+  case AppleTV2
+  case AppleTV3
+  case AppleTV4
+  case AppleTV_4K
+  case AppleTV2_4K
+  case unrecognized
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var type: brscan_sdk_selfie_ios.Model {
     get
   }
 }
