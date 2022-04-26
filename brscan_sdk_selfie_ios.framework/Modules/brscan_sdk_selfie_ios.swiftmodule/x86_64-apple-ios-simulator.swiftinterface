@@ -54,7 +54,7 @@ import _Concurrency
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CapturaSViewController : UIKit.UIViewController {
   @objc @_Concurrency.MainActor(unsafe) public var delegate: brscan_sdk_selfie_ios.CapturaSViewControllerDelegate?
-  @objc @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, wizard: Swift.Bool, mudarCamera: Swift.Bool = false, segurancaExtra: Swift.Bool = false, segurancaExtraRootCheck: Swift.Bool = false, segurancaExtraSslPinning: Swift.Bool = false, verificarLuminosidade: Swift.Bool = false, resolucao: Swift.String = "", performance: Swift.Bool = false, verificarOlhos: Swift.Bool = false, tipoRetorno: Swift.String = "base64", customizacaoTexto: brscan_sdk_selfie_ios.ConfiguracaoTextoSelfie = ConfiguracaoTextoSelfie(), retornarErros: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, wizard: Swift.Bool, mudarCamera: Swift.Bool = false, segurancaExtra: Swift.Bool = false, segurancaExtraRootCheck: Swift.Bool = false, segurancaExtraSslPinning: Swift.Bool = false, verificarLuminosidade: Swift.Bool = false, resolucao: Swift.String = "", performance: Swift.Bool = false, verificarOlhos: Swift.Bool = false, tipoRetorno: Swift.String = "base64", customizacaoTexto: brscan_sdk_selfie_ios.ConfiguracaoTextoSelfie = ConfiguracaoTextoSelfie(), retornarErros: Swift.Bool = false, tempoDelayMensagem: Swift.Int = 2000, acessibilidade: Swift.Bool = false)
   @objc @_Concurrency.MainActor(unsafe) override dynamic public func viewDidLoad()
   @objc deinit
 }
@@ -101,6 +101,12 @@ extension UIKit.UIColor {
     get
   }
   public var brscan_selfie_background_button_primary: UIKit.UIColor {
+    get
+  }
+  public var brscan_selfie_color_texto_orientacao: UIKit.UIColor {
+    get
+  }
+  public var brscan_selfie_box_texto_orientacao: UIKit.UIColor {
     get
   }
 }
