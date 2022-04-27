@@ -78,11 +78,11 @@
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		tmZe+XNoERQbbCKYGIk94sleWpc=
+		vSA/1bmwLkqlQ974DHbsyOiBMlw=
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		tmZe+XNoERQbbCKYGIk94sleWpc=
+		vSA/1bmwLkqlQ974DHbsyOiBMlw=
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Zv9a3z9aa6Mv490okOTikVmMaDk=
+		q8S46LwqnxQHonDGnNlsl23P64s=
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Zv9a3z9aa6Mv490okOTikVmMaDk=
+		q8S46LwqnxQHonDGnNlsl23P64s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -294,14 +294,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UCTO86R/bmX292M3nYUM/14O3515SdKZNu6RP7zeF9U=
+			nZlxeieVTkKnV2KfMmO7ggtSa1E8CbZFVAuP+i08VOE=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UCTO86R/bmX292M3nYUM/14O3515SdKZNu6RP7zeF9U=
+			nZlxeieVTkKnV2KfMmO7ggtSa1E8CbZFVAuP+i08VOE=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -322,7 +322,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oTyhj4i0NfIYAALk9fDGWCRn4+T2KCPXAlbdNdHaC+I=
+			2x3gfxCF/UcDUd5RHoVwI1iiTKntQFHfDyhiLhbko58=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64.swiftdoc</key>
@@ -343,7 +343,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oTyhj4i0NfIYAALk9fDGWCRn4+T2KCPXAlbdNdHaC+I=
+			2x3gfxCF/UcDUd5RHoVwI1iiTKntQFHfDyhiLhbko58=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
