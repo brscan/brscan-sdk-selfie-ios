@@ -100,6 +100,12 @@ extension UIKit.UIColor {
   public var brscan_selfie_icone_captura_botao_fechar: UIKit.UIColor {
     get
   }
+  public var brscan_selfie_color_texto_orientacao: UIKit.UIColor {
+    get
+  }
+  public var brscan_selfie_box_texto_orientacao: UIKit.UIColor {
+    get
+  }
   public var brscan_selfie_background_loading: UIKit.UIColor {
     get
   }
@@ -107,12 +113,6 @@ extension UIKit.UIColor {
     get
   }
   public var brscan_selfie_background_button_primary: UIKit.UIColor {
-    get
-  }
-  public var brscan_selfie_color_texto_orientacao: UIKit.UIColor {
-    get
-  }
-  public var brscan_selfie_box_texto_orientacao: UIKit.UIColor {
     get
   }
 }
