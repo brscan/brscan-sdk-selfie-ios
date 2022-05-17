@@ -9,6 +9,7 @@ import MLKitFaceDetection
 import MLKitVision
 import Security
 import Swift
+import SystemConfiguration
 import UIKit
 import _Concurrency
 @_exported import brscan_sdk_selfie_ios
@@ -213,6 +214,10 @@ extension Swift.String {
   @_Concurrency.MainActor(unsafe) public var testVar5: Swift.String
   @_Concurrency.MainActor(unsafe) public func addEclipsePequeno()
   @_Concurrency.MainActor(unsafe) public func addEclipseGrande()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class InternetConnectionManager {
+  public static func isConnectedToNetwork() -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class RandonGenerator {
