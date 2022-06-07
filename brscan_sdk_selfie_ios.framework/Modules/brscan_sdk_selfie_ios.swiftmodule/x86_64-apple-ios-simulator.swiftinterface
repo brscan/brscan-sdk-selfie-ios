@@ -246,11 +246,6 @@ extension UIKit.UIFont {
     get
   }
 }
-extension UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public static var DELAY_SHORT: Swift.Double
-  @_Concurrency.MainActor(unsafe) public static var DELAY_LONG: Swift.Double
-  @_Concurrency.MainActor(unsafe) public func showToast(_ text: Swift.String, delay: Foundation.TimeInterval = DELAY_LONG)
-}
 public enum Model : Swift.String {
   case simulator
   case iPod1
