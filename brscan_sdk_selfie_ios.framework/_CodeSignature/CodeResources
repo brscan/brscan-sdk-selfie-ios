@@ -26,7 +26,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		UQzXV2dzHjh4kBaIioGa4o5j7t0=
+		3I0OJs5XhPyp1eY86/+kSyBe//A=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -74,15 +74,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		En9jY/pgEl0cQS4OkNqjBoaJMMk=
+		/XRCvvOp9L1sfsM2FtHGwFEsBxI=
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		RcBJ0VqC/qONxhWFwbUYJxdDb5g=
+		wJfhuowJhS7n9uLUIlt4RABA13E=
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		RcBJ0VqC/qONxhWFwbUYJxdDb5g=
+		wJfhuowJhS7n9uLUIlt4RABA13E=
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		mMGza99li2Kd3DHqOms6ilEnSN4=
+		2PfnTsv+nFwKOhhxsU1xXyx0jbs=
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		mMGza99li2Kd3DHqOms6ilEnSN4=
+		2PfnTsv+nFwKOhhxsU1xXyx0jbs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -210,7 +210,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aE6oMj+tJ9UNZ+haeDOG508uX9/rdO7EVPLWGdpbjW8=
+			5oPBIgKxNQz8jbVwFpoVfIhmTrPkgT1GI+FaMvkGmP4=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -294,14 +294,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			696MjJfz20/1Myb/E/71d1kLU+7wvn5AuXuQkKbJNc8=
+			Bjy03ZJEHZQtBJNFLx6dkMAzEAWjWMNbsufO5W3OQGE=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			696MjJfz20/1Myb/E/71d1kLU+7wvn5AuXuQkKbJNc8=
+			Bjy03ZJEHZQtBJNFLx6dkMAzEAWjWMNbsufO5W3OQGE=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -322,7 +322,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZWdVXKtYbeFXikJFiJ3RUFWBNYVqoUX3kv6Yaj05v8s=
+			6Sb7YR8c9KqtZ7/I0Sk/nnxH9tF9QOD/GwFmvLQUbIE=
 			</data>
 		</dict>
 		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64.swiftdoc</key>
@@ -343,7 +343,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZWdVXKtYbeFXikJFiJ3RUFWBNYVqoUX3kv6Yaj05v8s=
+			6Sb7YR8c9KqtZ7/I0Sk/nnxH9tF9QOD/GwFmvLQUbIE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
